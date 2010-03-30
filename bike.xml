@@ -1,5 +1,5 @@
 <vehicleprofile name="bike" flags="0x40000000" flags_forward_mask="0x40000000" flags_reverse_mask="0x40000000" maxspeed_handling="1" route_mode="0">
-  <roadprofile item_types="steps" speed="2" route_weight="5">
+  <roadprofile item_types="steps" speed="2" route_weight="1">
     <announcement level="0" distance_metric="25"/>
     <announcement level="1" distance_metric="100"/>
     <announcement level="2" distance_metric="200"/>
@@ -9,18 +9,18 @@
     <announcement level="1" distance_metric="100"/>
     <announcement level="2" distance_metric="200"/>
   </roadprofile>
-  <roadprofile item_types="path,track_ground" speed="12" route_weight="12">
+  <roadprofile item_types="path,track_ground" speed="12" route_weight="5">
     <announcement level="0" distance_metric="25"/>
     <announcement level="1" distance_metric="100"/>
     <announcement level="2" distance_metric="200"/>
   </roadprofile>
-  <roadprofile item_types="track_gravelled" speed="17" route_weight="15">
+  <roadprofile item_types="track_gravelled" speed="17" route_weight="5">
     <announcement level="0" distance_metric="25"/>
     <announcement level="1" distance_metric="100"/>
     <announcement level="2" distance_metric="200"/>
   </roadprofile>
   <!-- cycleways, paved tracks, serviceways etc. are the favourite ways -->
-  <roadprofile item_types="track_paved,cycleway,street_service,street_parking_lane" speed="22" route_weight="20">
+  <roadprofile item_types="track_paved,cycleway,street_service,street_parking_lane" speed="22" route_weight="18">
     <announcement level="0" distance_metric="25"/>
     <announcement level="1" distance_metric="100"/>
     <announcement level="2" distance_metric="200"/>
@@ -31,20 +31,20 @@
     <announcement level="1" distance_metric="100"/>
     <announcement level="2" distance_metric="200"/>
   </roadprofile>
-  <!-- tertiary and minor roads are acceptable, but should be avoided in favour of tracks and cycleways -->
-  <roadprofile item_types="street_2_city,street_1_land,street_2_land" speed="22" route_weight="12">
+  <!-- tertiary and minor roads are acceptable,  -->
+  <roadprofile item_types="street_2_city,street_1_land,street_2_land" speed="22" route_weight="17">
     <announcement level="0" distance_metric="25"/>
     <announcement level="1" distance_metric="100"/>
     <announcement level="2" distance_metric="200"/>
   </roadprofile>
-  <!-- secondary etc. are acceptable when necessary -->
-  <roadprofile item_types="street_3_city" speed="22" route_weight="10">
+  <!-- secondary etc. are acceptable-->
+  <roadprofile item_types="street_3_city" speed="22" route_weight="16">
     <announcement level="0" distance_metric="25"/>
     <announcement level="1" distance_metric="100"/>
     <announcement level="2" distance_metric="200"/>
   </roadprofile>
   <!-- primary, trunk etc. should be avoided -->
-  <roadprofile item_types="street_4_city,ramp" speed="22" route_weight="7">
+  <roadprofile item_types="street_4_city,ramp" speed="22" route_weight="10">
     <announcement level="0" distance_metric="25"/>
     <announcement level="1" distance_metric="100"/>
     <announcement level="2" distance_metric="200"/>
